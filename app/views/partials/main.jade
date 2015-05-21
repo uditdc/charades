@@ -1,0 +1,13 @@
+div(ng-include='\'partials/navbar\'')
+
+.jumbotron
+  h1.movie-name() {{movieName}}
+  br
+  br
+  p.lead.text-muted
+    br
+    | Click generate to randomly search for any movie.
+  br
+  p
+    a.btn.btn-lg.btn-success(ng-href='#' ng-click="getRandomMovie()") Generate
+    
